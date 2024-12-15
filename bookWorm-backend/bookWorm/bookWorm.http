@@ -1,0 +1,6 @@
+@bookWorm_HostAddress = http://localhost:5207
+
+GET {{bookWorm_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
