@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bookWorm", "bookWorm.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharingLibraries", "..\SharingLibraries\SharingLibraries.csproj", "{374BA3D4-5963-49AE-B032-707A0083F97B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserAdministrationService", "..\UserAdministrationService\UserAdministrationService.csproj", "{F4718CD6-EFA0-4962-9DC9-C5F263F2D4C7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserAdministrationMicroservice", "..\UserAdministrationMicroservice\UserAdministrationMicroservice.csproj", "{34CA70C5-8D44-4E44-87D0-FDBF3A1D7241}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{374BA3D4-5963-49AE-B032-707A0083F97B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{374BA3D4-5963-49AE-B032-707A0083F97B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{374BA3D4-5963-49AE-B032-707A0083F97B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F4718CD6-EFA0-4962-9DC9-C5F263F2D4C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F4718CD6-EFA0-4962-9DC9-C5F263F2D4C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F4718CD6-EFA0-4962-9DC9-C5F263F2D4C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F4718CD6-EFA0-4962-9DC9-C5F263F2D4C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34CA70C5-8D44-4E44-87D0-FDBF3A1D7241}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34CA70C5-8D44-4E44-87D0-FDBF3A1D7241}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34CA70C5-8D44-4E44-87D0-FDBF3A1D7241}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34CA70C5-8D44-4E44-87D0-FDBF3A1D7241}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
