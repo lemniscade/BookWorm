@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/aspnetcore,react,visualstudio,visualstudiocode,sass
-# Edit at https://www.toptal.com/developers/gitignore?templates=aspnetcore,react,visualstudio,visualstudiocode,sass
+# Created by https://www.toptal.com/developers/gitignore/api/sass,visualstudio,visualstudiocode,aspnetcore,nextjs
+# Edit at https://www.toptal.com/developers/gitignore?templates=sass,visualstudio,visualstudiocode,aspnetcore,nextjs
 
 ### ASPNETCore ###
 ## Ignore Visual Studio temporary files, build results, and
@@ -271,20 +271,41 @@ __pycache__/
 # Cake - Uncomment if you are using it
 # tools/
 
-### react ###
-.DS_*
-logs
-**/*.backup.*
-**/*.back.*
+### NextJS ###
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
 
-node_modules
-bower_components
+# testing
+/coverage
 
-*.sublime*
+# next.js
+/.next/
+/out/
 
-psd
-thumb
-sketch
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# local env files
+.env*.local
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
 
 ### Sass ###
 *.css.map
@@ -559,4 +580,4 @@ FodyWeavers.xsd
 ### VisualStudio Patch ###
 # Additional files built by Visual Studio
 
-# End of https://www.toptal.com/developers/gitignore/api/aspnetcore,react,visualstudio,visualstudiocode,sass
+# End of https://www.toptal.com/developers/gitignore/api/sass,visualstudio,visualstudiocode,aspnetcore,nextjs
