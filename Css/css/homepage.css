@@ -1,0 +1,56 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+/* Telefon */
+@media (max-width: 480px) {
+  .first {
+    background-color: #fff1e6;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 14px;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 0.75rem;
+    text-align: center;
+    font-size: 0.875rem;
+    line-height: 1.4;
+  }
+  .second {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    padding: 12px;
+  }
+  .second .inner-second {
+    display: inline-block;
+  }
+  .second .inner-second img {
+    height: 60px;
+    width: 200px;
+  }
+  .second .inner-second-two {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60px;
+  }
+  .second .inner-second-two img {
+    width: 25px;
+    height: 60px;
+  }
+}
+/* Tablet Dikey */
+/* Tablet Yatay */
+/* Küçük Laptop */
+/* Standart Laptop */
+/* Masaüstü */
+
+/*# sourceMappingURL=homepage.css.map */
