@@ -47,6 +47,10 @@ svg {
   fill: rgb(235, 136, 8);
 }
 
+.hide {
+  display: none;
+}
+
 /* Overlay */
 .overlay {
   position: fixed;

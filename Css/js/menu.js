@@ -3,7 +3,7 @@ const menuToggle = document.getElementById("menuToggle");
 const slideoutMenu = document.getElementById("slideoutMenu");
 const overlay = document.getElementById("overlay");
 const mainContent = document.querySelector(".main-content");
-
+document.getElementById("xmark").classList.add("hide");
 // Menü durumu
 let isMenuOpen = false;
 
@@ -13,8 +13,16 @@ function toggleMenu() {
 
   if (isMenuOpen) {
     openMenu();
+    if (document.getElementById("xmark").classList.contains("hide")) {
+      document.getElementById("xmark").classList.remove("hide");
+      document.getElementById("burger").classList.add("hide");
+    }
   } else {
     closeMenu();
+    if (document.getElementById("burger").classList.contains("hide")) {
+      document.getElementById("xmark").classList.add("hide");
+      document.getElementById("burger").classList.remove("hide");
+    }
   }
 }
 
@@ -90,3 +98,16 @@ function handleSwipe() {
     closeMenu();
   }
 }
+
+//slider
+const swiper = new Swiper(".swiper", {
+  loop: true, // sonsuz döngü
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
