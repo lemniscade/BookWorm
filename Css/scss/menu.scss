@@ -9,12 +9,6 @@
   justify-content: flex-start;
   padding: 5px;
 }
-.menu-second-position {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-}
 /* Ana içerik alanı */
 .main-content {
   padding: 20px;
@@ -34,7 +28,7 @@
   width: 30px;
   height: 30px;
   cursor: pointer;
-  backdrop-filter: blur(10px);
+  // backdrop-filter: blur(10px);
   transition: all 0.3s ease;
   display: flex;
   align-items: center;
@@ -42,7 +36,7 @@
 }
 
 .menu-toggle:hover {
-  background: rgba(255, 255, 255, 0.3);
+  // background: rgba(255, 255, 255, 0.3);
   transform: scale(1.1);
 }
 svg {
@@ -51,49 +45,12 @@ svg {
 .hide {
   display: none;
 }
-// .menu-toggle span {
-//   position: relative;
-//   width: 25px;
-//   height: 3px;
-//   background: white;
-//   transition: all 0.3s ease;
-//   border-radius: 2px;
-// }
-
-// .menu-toggle span::before,
-// .menu-toggle span::after {
-//   content: "";
-//   position: absolute;
-//   width: 25px;
-//   height: 3px;
-//   background: white;
-//   border-radius: 2px;
-//   transition: all 0.3s ease;
-// }
-
-// .menu-toggle span::before {
-//   top: -8px;
-// }
-
-// .menu-toggle span::after {
-//   bottom: -8px;
-// }
-
-// /* Hamburger animasyonu */
-// .menu-toggle.active span {
-//   background: transparent;
-// }
-
-// .menu-toggle.active span::before {
-//   top: 0;
-//   transform: rotate(45deg);
-// }
-
-// .menu-toggle.active span::after {
-//   bottom: 0;
-//   transform: rotate(-45deg);
-// }
-
+.xmark-position{
+  position: absolute;
+  top: 5px;
+  left: 240px;
+  z-index: 1002;
+}
 /* Overlay */
 .overlay {
   position: fixed;
@@ -101,7 +58,7 @@ svg {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  // background: rgba(0, 0, 0, 0.5);
   z-index: 999;
   opacity: 0;
   visibility: hidden;
@@ -207,7 +164,7 @@ svg {
 
 .card {
   background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
+  // backdrop-filter: blur(10px);
   border-radius: 15px;
   padding: 30px;
   margin: 30px 0;

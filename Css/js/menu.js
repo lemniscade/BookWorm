@@ -1,12 +1,14 @@
 // DOM elementleri
 const menuToggle = document.getElementById("menuToggle");
+const menuToggleXmark = document.getElementById("menuToggle-xmark");
 const slideoutMenu = document.getElementById("slideoutMenu");
 const overlay = document.getElementById("overlay");
 const mainContent = document.querySelector(".main-content");
 document.getElementById("xmark").classList.add("hide");
 // Menü durumu
 let isMenuOpen = false;
-
+menuToggle.classList.add("active");
+menuToggleXmark.classList.add("hide");
 // Menüyü aç/kapat
 function toggleMenu() {
   isMenuOpen = !isMenuOpen;
@@ -30,7 +32,10 @@ function toggleMenu() {
 function openMenu() {
   slideoutMenu.classList.add("active");
   overlay.classList.add("active");
-  menuToggle.classList.add("active");
+  menuToggle.classList.remove("active");
+  menuToggle.classList.add("hide");
+  menuToggleXmark.classList.remove("hide");
+  menuToggleXmark.classList.add("active");
   document.body.style.overflow = "hidden";
 }
 
@@ -38,13 +43,17 @@ function openMenu() {
 function closeMenu() {
   slideoutMenu.classList.remove("active");
   overlay.classList.remove("active");
-  menuToggle.classList.remove("active");
+  menuToggle.classList.remove("hide");
+  menuToggleXmark.classList.add("hide");
+  menuToggleXmark.classList.remove("active");
+  menuToggle.classList.remove("hide");
   document.body.style.overflow = "";
   isMenuOpen = false;
 }
 
 // Event listeners
 menuToggle.addEventListener("click", toggleMenu);
+menuToggleXmark.addEventListener("click", toggleMenu);
 overlay.addEventListener("click", closeMenu);
 
 // Menü öğelerine tıklandığında menüyü kapat

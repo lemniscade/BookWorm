@@ -4,6 +4,6 @@
     "slideout": "^1.0.1"
   },
   "scripts": {
-    "sass": "sass --watch scss:css"
+    "sass": "sass --watch scss:css/homepageCss/"
   }
 }
