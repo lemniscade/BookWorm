@@ -9,6 +9,12 @@ document.getElementById("xmark").classList.add("hide");
 let isMenuOpen = false;
 menuToggle.classList.add("active");
 menuToggleXmark.classList.add("hide");
+var closeFlag=false;
+
+var menuElement = document.getElementById("slideoutMenu");
+ var overlayElement = document.getElementById("overlay");
+const width = menuElement.offsetWidth-40;
+document.documentElement.style.setProperty("--menu-width", width + "px");
 // Menüyü aç/kapat
 function toggleMenu() {
   isMenuOpen = !isMenuOpen;
@@ -18,12 +24,16 @@ function toggleMenu() {
     if (document.getElementById("xmark").classList.contains("hide")) {
       document.getElementById("xmark").classList.remove("hide");
       document.getElementById("burger").classList.add("hide");
+      menuToggleXmark.classList.remove("hide");
+      menuToggleXmark.classList.add("active");
     }
   } else {
     closeMenu();
     if (document.getElementById("burger").classList.contains("hide")) {
       document.getElementById("xmark").classList.add("hide");
       document.getElementById("burger").classList.remove("hide");
+      menuToggleXmark.classList.add("hide");
+      menuToggleXmark.classList.remove("active");
     }
   }
 }
@@ -37,6 +47,8 @@ function openMenu() {
   menuToggleXmark.classList.remove("hide");
   menuToggleXmark.classList.add("active");
   document.body.style.overflow = "hidden";
+  menuToggle.style.setProperty("display", "none", "important");
+  menuToggleXmark.style.setProperty("display", "flex", "important");
 }
 
 // Menüyü kapat
@@ -46,9 +58,12 @@ function closeMenu() {
   menuToggle.classList.remove("hide");
   menuToggleXmark.classList.add("hide");
   menuToggleXmark.classList.remove("active");
-  menuToggle.classList.remove("hide");
+  menuToggle.classList.add("active");
   document.body.style.overflow = "";
   isMenuOpen = false;
+  menuToggle.style.setProperty("display", "flex", "important");
+  menuToggleXmark.style.setProperty("display", "none", "important");
+  closeFlag=true;
 }
 
 // Event listeners
@@ -81,6 +96,17 @@ window.addEventListener("resize", () => {
   }
 });
 
+ 
+
+document.addEventListener("click", function(event) {
+  if (!menuElement.contains(event.target) && overlayElement.contains(event.target) && !isMenuOpen && closeFlag) {
+    closeMenu();
+    closeFlag=false;
+    document.getElementById("burger").classList.remove("hide");
+  }
+});
+
+
 // Touch/swipe desteği (opsiyonel)
 let touchStartX = 0;
 let touchEndX = 0;
@@ -100,12 +126,15 @@ function handleSwipe() {
   // Sol kenardan sağa kaydırma (menüyü aç)
   if (swipeDistance > 100 && touchStartX < 50 && !isMenuOpen) {
     openMenu();
+    menuToggle.style.display = "none";
   }
 
   // Sağdan sola kaydırma (menüyü kapat)
   if (swipeDistance < -100 && isMenuOpen) {
     closeMenu();
+    menuToggle.style.display = "flex";
   }
+
 }
 
 //slider

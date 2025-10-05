@@ -44,8 +44,8 @@ svg {
 
 .xmark-position {
   position: absolute;
-  top: 5px;
-  left: 240px;
+  top: 10px;
+  left: var(--menu-width);
   z-index: 1002;
 }
 

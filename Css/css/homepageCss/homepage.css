@@ -6,233 +6,684 @@
 }
 
 /* Telefon */
-.first {
-  background-color: #fff1e6;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  font-size: 14px;
-  flex-basis: 0;
-  flex-grow: 1;
-  flex-shrink: 1;
-  padding: 0.75rem;
-  text-align: center;
-  font-size: 0.875rem;
-  line-height: 1.4;
+@media (min-width: 480px) and (max-width: 768px) {
+  .front-user-text {
+    display: none;
+  }
+  .first {
+    background-color: #fff1e6;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 14px;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 0.75rem;
+    text-align: center;
+    font-size: 0.875rem;
+    line-height: 1.4;
+  }
+  .first .upper-header-text {
+    width: 100vw;
+    text-align: center;
+  }
+  .second {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 8px;
+  }
+  .second .inner-second {
+    display: inline-block;
+  }
+  .second .inner-second img {
+    height: 60px;
+    width: 200px;
+  }
+  .second .inner-second-two {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60px;
+  }
+  .second .inner-second-two img {
+    width: 25px;
+    height: 60px;
+  }
+  .input-div {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px;
+  }
+  .input-div .inner-input-div {
+    width: 97vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .input-div .inner-input-div input::placeholder {
+    text-align: start;
+  }
+  .input-div svg {
+    width: 25px;
+    height: 35px;
+    position: relative;
+    right: 0px;
+    fill: rgb(108, 108, 207);
+  }
+  input {
+    width: 80vw;
+    height: 25px;
+    border-radius: 10px;
+    background-color: rgb(246, 245, 247);
+    border: 3px solid #2c293b;
+    font-size: medium;
+    font-weight: 900;
+  }
+  input::placeholder {
+    color: rgb(132, 143, 181);
+  }
+  .motto {
+    font-size: 20px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color: chocolate;
+    text-align: center;
+    padding: 10px;
+  }
+  .swiper {
+    width: 100vw;
+    height: 150px;
+    overflow: hidden;
+    padding-bottom: 10px !important;
+  }
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: #fff;
+  }
+  .bg-cover {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; /* contain yapacaksan 'contain' yaz */
+  }
+  .chosen-books-outer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding-bottom: 10px;
+  }
+  .chosen-books-outer .chosen-books-text {
+    font-weight: 900;
+    font-size: 20px;
+    padding: 10px;
+    padding-top: 0px !important;
+    color: rgb(108, 108, 207);
+    width: 100vw;
+  }
+  .chosen-books-outer .chosen-books {
+    background-color: rgb(228, 227, 234);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100vw;
+    overflow-x: hidden !important;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  .chosen-books-outer .chosen-books img {
+    width: 15vh;
+    height: auto;
+  }
+  .footer {
+    width: 100vw;
+    background-color: rgb(255, 238, 230);
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  .footer .footer-title {
+    font-size: 25px;
+    font-weight: 1000;
+    color: rgb(43, 15, 72);
+  }
+  .footer .footer-button {
+    background-color: rgb(87, 59, 163);
+    color: white;
+    font-size: small;
+    font-weight: 700;
+    width: 200px;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    padding: 5px;
+  }
+  .footer-down {
+    background-color: rgb(67, 32, 111);
+  }
+  .footer-down .footer-down-title {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    padding: 10px;
+  }
+  .footer-down .store {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+  .extra {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(43, 15, 66);
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+  }
+  .extra .follow {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+  }
+  .contact .inner-contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    width: 100vw;
+  }
+  .contact .inner-contact svg {
+    height: 45px;
+  }
 }
-.first .upper-header-text {
-  width: 500px;
-}
-
-.second {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: auto;
-  padding-left: 12px;
-  padding-right: 12px;
-  padding-bottom: 8px;
-}
-.second .inner-second {
-  display: inline-block;
-}
-.second .inner-second img {
-  height: 60px;
-  width: 200px;
-}
-.second .inner-second-two {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 60px;
-}
-.second .inner-second-two img {
-  width: 25px;
-  height: 60px;
-}
-
-.input-div {
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 5px;
-}
-.input-div .inner-input-div {
-  width: 90vw;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.input-div .inner-input-div input::placeholder {
-  text-align: start;
-}
-.input-div svg {
-  width: 25px;
-  height: 35px;
-  position: relative;
-  right: 5px;
-  fill: rgb(108, 108, 207);
-}
-
-input {
-  width: 80vw;
-  height: 25px;
-  border-radius: 10px;
-  background-color: rgb(246, 245, 247);
-  border: 3px solid rgb(153, 128, 153);
-  font-size: medium;
-  font-weight: 900;
-}
-
-input::placeholder {
-  color: rgb(132, 143, 181);
-}
-
-.motto {
-  font-size: 20px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-weight: 500;
-  color: chocolate;
-  text-align: center;
-  padding: 10px;
-}
-
-.swiper {
-  width: 100vw;
-  height: 150px;
-  overflow: hidden;
-  padding-bottom: 10px !important;
-}
-
-.swiper-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2rem;
-  color: #fff;
-}
-
-.bg-cover {
-  width: 100%;
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; /* contain yapacaksan 'contain' yaz */
-}
-
-.chosen-books-outer {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-around;
-  padding-bottom: 10px;
-}
-.chosen-books-outer .chosen-books-text {
-  font-weight: 900;
-  font-size: 20px;
-  padding: 10px;
-  padding-top: 0px !important;
-  color: rgb(108, 108, 207);
-  width: 100vw;
-}
-.chosen-books-outer .chosen-books {
-  background-color: rgb(228, 227, 234);
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 100vw;
-  overflow-x: hidden !important;
-  padding-bottom: 10px;
-  padding-top: 10px;
-}
-.chosen-books-outer .chosen-books img {
-  width: 15vh;
-  height: auto;
-}
-
-.footer {
-  width: 100vw;
-  background-color: rgb(255, 238, 230);
-  display: flex;
-  flex-direction: column;
-  height: 20vh;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-}
-.footer .footer-title {
-  font-size: 25px;
-  font-weight: 1000;
-  color: rgb(43, 15, 72);
-}
-.footer .footer-button {
-  background-color: rgb(87, 59, 163);
-  color: white;
-  font-size: small;
-  font-weight: 700;
-  width: 200px;
-  border-radius: 10px;
-  letter-spacing: 1px;
-  padding: 5px;
-}
-
-.footer-down {
-  background-color: rgb(67, 32, 111);
-}
-.footer-down .footer-down-title {
-  color: white;
-  text-align: center;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 30px;
-  padding: 10px;
-}
-.footer-down .store {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding-bottom: 10px;
-}
-
-.extra {
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  background-color: rgb(43, 15, 66);
-  color: white;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-size: 20px;
-}
-.extra .follow {
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-
-.contact {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  color: white;
-}
-.contact .inner-contact {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 50px;
-  width: 100vw;
-}
-.contact .inner-contact svg {
-  height: 45px;
-}
-
 /* Tablet Dikey */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .extra-with-logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(43, 15, 66);
+    height: 300px;
+  }
+  .right-bottom-logo {
+    width: 200px;
+    height: auto;
+    background-color: rgb(87, 59, 163);
+  }
+  .left-bottom-logo {
+    width: 200px;
+    height: auto;
+    background-color: rgb(87, 59, 163);
+  }
+  .front-user-text {
+    width: 150px;
+    font-size: 16px;
+    font-weight: bolder;
+    text-align: center;
+    color: #2c293b;
+  }
+  .first {
+    background-color: #fff1e6;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 14px;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 0.75rem;
+    text-align: center;
+    font-size: 0.875rem;
+    line-height: 1.4;
+  }
+  .first .upper-header-text {
+    width: 100vw;
+    text-align: center;
+  }
+  .second {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 8px;
+  }
+  .second .inner-second {
+    display: inline-block;
+  }
+  .second .inner-second img {
+    height: 60px;
+    width: 200px;
+  }
+  .second .inner-second-two {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 230px;
+  }
+  .second .inner-second-two img {
+    width: 25px;
+    height: 60px;
+  }
+  .input-div {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px;
+  }
+  .input-div .inner-input-div {
+    width: 97vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .input-div .inner-input-div input::placeholder {
+    text-align: start;
+    color: #2c293b;
+  }
+  .input-div svg {
+    width: 25px;
+    height: 35px;
+    position: relative;
+    right: 0px;
+    fill: rgb(108, 108, 207);
+  }
+  input {
+    width: 80vw;
+    height: 25px;
+    border-radius: 10px;
+    background-color: rgb(246, 245, 247);
+    border: 3px solid #2c293b;
+    font-size: medium;
+    font-weight: 900;
+  }
+  input::placeholder {
+    color: rgb(132, 143, 181);
+  }
+  .motto {
+    font-size: 20px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color: chocolate;
+    text-align: center;
+    padding: 10px;
+  }
+  .swiper {
+    width: 100vw;
+    height: 150px;
+    overflow: hidden;
+    padding-bottom: 10px !important;
+  }
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: #fff;
+  }
+  .bg-cover {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; /* contain yapacaksan 'contain' yaz */
+  }
+  .chosen-books-outer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding-bottom: 10px;
+  }
+  .chosen-books-outer .chosen-books-text {
+    font-weight: 900;
+    font-size: 20px;
+    padding: 10px;
+    padding-top: 0px !important;
+    color: rgb(108, 108, 207);
+    width: 100vw;
+  }
+  .chosen-books-outer .chosen-books {
+    background-color: rgb(228, 227, 234);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100vw;
+    overflow-x: hidden !important;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  .chosen-books-outer .chosen-books img {
+    width: 15vh;
+    height: auto;
+  }
+  .footer {
+    width: 100vw;
+    background-color: rgb(255, 238, 230);
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  .footer .footer-title {
+    font-size: 25px;
+    font-weight: 1000;
+    color: rgb(43, 15, 72);
+  }
+  .footer .footer-button {
+    background-color: rgb(87, 59, 163);
+    color: white;
+    font-size: small;
+    font-weight: 700;
+    width: 200px;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    padding: 5px;
+  }
+  .footer-down {
+    background-color: rgb(67, 32, 111);
+  }
+  .footer-down .footer-down-title {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    padding: 10px;
+  }
+  .footer-down .store {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+  .extra {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(43, 15, 66);
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+  }
+  .extra .follow {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .contact {
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    height: 100px;
+    font-size: 20px;
+    background-color: rgb(43, 15, 66);
+  }
+  .contact .inner-contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    width: 100vw;
+    background-color: rgb(43, 15, 66);
+  }
+  .contact .inner-contact svg {
+    height: 45px;
+  }
+}
 /* Tablet Yatay */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .first {
+    background-color: #fff1e6;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 14px;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 0.75rem;
+    text-align: center;
+    font-size: 0.875rem;
+    line-height: 1.4;
+  }
+  .first .upper-header-text {
+    width: 100vw;
+    text-align: center;
+  }
+  .second {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 8px;
+  }
+  .second .inner-second {
+    display: inline-block;
+  }
+  .second .inner-second img {
+    height: 60px;
+    width: 200px;
+  }
+  .second .inner-second-two {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60px;
+  }
+  .second .inner-second-two img {
+    width: 25px;
+    height: 60px;
+  }
+  .input-div {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px;
+  }
+  .input-div .inner-input-div {
+    width: 97vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .input-div .inner-input-div input::placeholder {
+    text-align: start;
+  }
+  .input-div svg {
+    width: 25px;
+    height: 35px;
+    position: relative;
+    right: 0px;
+    fill: rgb(108, 108, 207);
+  }
+  input {
+    width: 80vw;
+    height: 25px;
+    border-radius: 10px;
+    background-color: rgb(246, 245, 247);
+    border: 3px solid #2c293b;
+    font-size: medium;
+    font-weight: 900;
+  }
+  input::placeholder {
+    color: rgb(132, 143, 181);
+  }
+  .motto {
+    font-size: 20px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color: chocolate;
+    text-align: center;
+    padding: 10px;
+  }
+  .swiper {
+    width: 100vw;
+    height: 150px;
+    overflow: hidden;
+    padding-bottom: 10px !important;
+  }
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: #fff;
+  }
+  .bg-cover {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; /* contain yapacaksan 'contain' yaz */
+  }
+  .chosen-books-outer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding-bottom: 10px;
+  }
+  .chosen-books-outer .chosen-books-text {
+    font-weight: 900;
+    font-size: 20px;
+    padding: 10px;
+    padding-top: 0px !important;
+    color: rgb(108, 108, 207);
+    width: 100vw;
+  }
+  .chosen-books-outer .chosen-books {
+    background-color: rgb(228, 227, 234);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100vw;
+    overflow-x: hidden !important;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  .chosen-books-outer .chosen-books img {
+    width: 15vh;
+    height: auto;
+  }
+  .footer {
+    width: 100vw;
+    background-color: rgb(255, 238, 230);
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  .footer .footer-title {
+    font-size: 25px;
+    font-weight: 1000;
+    color: rgb(43, 15, 72);
+  }
+  .footer .footer-button {
+    background-color: rgb(87, 59, 163);
+    color: white;
+    font-size: small;
+    font-weight: 700;
+    width: 200px;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    padding: 5px;
+  }
+  .footer-down {
+    background-color: rgb(67, 32, 111);
+  }
+  .footer-down .footer-down-title {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    padding: 10px;
+  }
+  .footer-down .store {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+  .extra {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(43, 15, 66);
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+  }
+  .extra .follow {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+  }
+  .contact .inner-contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    width: 100vw;
+  }
+  .contact .inner-contact svg {
+    height: 40px;
+  }
+}
 /* Küçük Laptop */
 /* Standart Laptop */
 /* Masaüstü */
