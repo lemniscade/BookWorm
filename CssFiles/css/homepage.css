@@ -1,0 +1,107 @@
+.nav {
+  width: 100vw;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-menu {
+  width: 10vw;
+  height: 30px;
+}
+
+.main-logo {
+  width: auto;
+  height: 60px;
+  position: relative;
+  left: 27px;
+}
+.main-logo img {
+  height: 60px;
+  width: auto;
+}
+
+.nav-logos {
+  width: 22vw;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-logos .user-icon {
+  width: 10vw;
+  height: auto;
+}
+.nav-logos .user-icon .user-icon-svg {
+  fill: black;
+  width: 40px;
+}
+.nav-logos .cart-icon {
+  width: 10vw;
+  height: auto;
+}
+.nav-logos .cart-icon .cart-icon-svg {
+  fill: black;
+  width: 40px;
+  padding-right: 16px;
+}
+
+.input-area {
+  width: 100vw;
+  height: 30px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input-area .magnify {
+  position: absolute;
+  right: 23px;
+  height: 30px;
+  width: auto;
+}
+.input-area .magnify .magnify-icon {
+  height: 30px;
+  width: auto;
+}
+.input-area input {
+  height: 30px;
+  width: 90vw;
+  border-radius: 10px;
+}
+
+.booklist {
+  width: 100vw;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-between;
+  padding-top: 20px;
+}
+.booklist .booklist-header {
+  font-size: 30px;
+  padding: 20px;
+  font-weight: bold;
+}
+.booklist .book-wrapper {
+  width: 150px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.booklist .book {
+  width: 150px;
+  height: auto;
+  padding-right: 5px;
+}
+.booklist .book img {
+  width: 150px;
+  height: auto;
+  object-fit: cover;
+}
+
+/*# sourceMappingURL=homepage.css.map */
