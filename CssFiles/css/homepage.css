@@ -1,200 +1,413 @@
-.nav {
-  width: 100vw;
-  height: 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+@media (max-width: 1023px) {
+  .nav {
+    width: 100vw;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .left-menu {
+    width: 10vw;
+    height: 30px;
+  }
+  .main-logo {
+    width: auto;
+    height: 60px;
+    position: absolute;
+    left: calc(50vw - 40px);
+  }
+  .main-logo img {
+    height: 60px;
+    width: auto;
+  }
+  .nav-logos {
+    width: 22vw;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-logos .user-icon {
+    width: 10vw;
+    height: auto;
+  }
+  .nav-logos .user-icon .user-icon-svg {
+    fill: black;
+    width: 40px;
+  }
+  .nav-logos .cart-icon {
+    width: 10vw;
+    height: auto;
+  }
+  .nav-logos .cart-icon .cart-icon-svg {
+    fill: black;
+    width: 40px;
+  }
+  .input-area {
+    width: 100vw;
+    height: 30px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .input-area .magnify {
+    position: absolute;
+    right: 23px;
+    height: 30px;
+    width: auto;
+  }
+  .input-area .magnify .magnify-icon {
+    height: 30px;
+    width: auto;
+  }
+  .input-area input {
+    height: 30px;
+    width: 95vw;
+    border-radius: 10px;
+  }
+  .booklist {
+    width: 90vw;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+    padding-top: 20px;
+  }
+  .booklist .booklist-header {
+    font-size: 30px;
+    padding: 20px;
+    font-weight: bold;
+  }
+  .booklist .book-wrapper {
+    width: 150px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .booklist .book {
+    width: 150px;
+    height: auto;
+    padding-right: 5px;
+  }
+  .booklist .book img {
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+  }
+  footer {
+    width: 100vw;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  footer .footer-first {
+    width: 95vw;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 5px solid black;
+    margin-top: 15px;
+  }
+  footer .footer-first .footer-text {
+    text-align: center;
+    width: 80vw;
+    font-size: 20px;
+    font-weight: bolder;
+    padding-bottom: 10px;
+  }
+  footer .footer-first .store-icons {
+    width: 50vw;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer .footer-first .store-icons img {
+    object-fit: cover;
+    height: auto;
+    width: 100px;
+    padding: 10px;
+  }
+  footer .footer-headers {
+    width: 90vw;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  footer .social-media {
+    width: 30vw;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer .social-media .follow {
+    text-align: center;
+    width: 80vw;
+    font-size: 20px;
+    font-weight: bolder;
+    padding-bottom: 10px;
+  }
+  footer .social-media .social-media-icons {
+    width: 40vw;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer .social-media .social-media-icons svg {
+    fill: black;
+    width: 30px;
+    height: auto;
+  }
+  footer .end-of-footer {
+    width: 90vw;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  footer .end-of-footer .payments,
+  footer .end-of-footer .last-text {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  footer .end-of-footer img {
+    height: auto;
+    width: 100px;
+  }
 }
-
-.left-menu {
-  width: 10vw;
-  height: 30px;
-}
-
-.main-logo {
-  width: auto;
-  height: 60px;
-  position: absolute;
-  left: calc(50vw - 40px);
-}
-.main-logo img {
-  height: 60px;
-  width: auto;
-}
-
-.nav-logos {
-  width: 22vw;
-  height: 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.nav-logos .user-icon {
-  width: 10vw;
-  height: auto;
-}
-.nav-logos .user-icon .user-icon-svg {
-  fill: black;
-  width: 40px;
-}
-.nav-logos .cart-icon {
-  width: 10vw;
-  height: auto;
-}
-.nav-logos .cart-icon .cart-icon-svg {
-  fill: black;
-  width: 40px;
-}
-
-.input-area {
-  width: 100vw;
-  height: 30px;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.input-area .magnify {
-  position: absolute;
-  right: 23px;
-  height: 30px;
-  width: auto;
-}
-.input-area .magnify .magnify-icon {
-  height: 30px;
-  width: auto;
-}
-.input-area input {
-  height: 30px;
-  width: 95vw;
-  border-radius: 10px;
-}
-
-.booklist {
-  width: 90vw;
-  height: 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: space-between;
-  padding-top: 20px;
-}
-.booklist .booklist-header {
-  font-size: 30px;
-  padding: 20px;
-  font-weight: bold;
-}
-.booklist .book-wrapper {
-  width: 150px;
-  height: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.booklist .book {
-  width: 150px;
-  height: auto;
-  padding-right: 5px;
-}
-.booklist .book img {
-  width: 150px;
-  height: auto;
-  object-fit: cover;
-}
-
-footer {
-  width: 100vw;
-  height: 500px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-}
-footer .footer-first {
-  width: 95vw;
-  height: 120px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  border: 5px solid black;
-  margin-top: 15px;
-}
-footer .footer-first .footer-text {
-  text-align: center;
-  width: 80vw;
-  font-size: 20px;
-  font-weight: bolder;
-  padding-bottom: 10px;
-}
-footer .footer-first .store-icons {
-  width: 50vw;
-  height: 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-footer .footer-first .store-icons img {
-  object-fit: cover;
-  height: auto;
-  width: 100px;
-  padding: 10px;
-}
-footer .footer-headers {
-  width: 90vw;
-  height: 120px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  font-size: 18px;
-  font-weight: bold;
-}
-footer .social-media {
-  width: 30vw;
-  height: 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-footer .social-media .follow {
-  text-align: center;
-  width: 80vw;
-  font-size: 20px;
-  font-weight: bolder;
-  padding-bottom: 10px;
-}
-footer .social-media .social-media-icons {
-  width: 40vw;
-  height: 40px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-footer .social-media .social-media-icons svg {
-  fill: black;
-  width: 30px;
-  height: auto;
-}
-footer .end-of-footer {
-  width: 90vw;
-  height: 100px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-footer .end-of-footer .payments,
-footer .end-of-footer .last-text {
-  font-size: 18px;
-  font-weight: bold;
-}
-footer .end-of-footer img {
-  height: auto;
-  width: 100px;
+@media (min-width: 1024px) {
+  .navbar-1024 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px;
+  }
+  .navbar-1024 img {
+    width: auto;
+    height: 60px;
+  }
+  .navbar-1024 .input-area-1024 {
+    width: 40vw;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar-1024 .input-area-1024 input {
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+  }
+  .navbar-1024 .input-area-1024 .magnify {
+    position: absolute;
+    left: 53vw;
+    height: 40px;
+    width: auto;
+  }
+  .navbar-1024 .input-area-1024 .magnify .magnify-icon {
+    height: 40px;
+    width: auto;
+  }
+  .navbar-1024 .nav-logos-1024 {
+    width: 30vw;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .navbar-1024 .nav-logos-1024 .cart-icon {
+    width: 7vw;
+    height: auto;
+  }
+  .navbar-1024 .nav-logos-1024 .cart-icon .cart-icon-svg {
+    fill: black;
+    width: 40px;
+  }
+  .navbar {
+    display: none !important;
+  }
+  .left-menu {
+    width: 10vw;
+    height: 30px;
+  }
+  .main-logo {
+    width: auto;
+    height: 60px;
+    position: absolute;
+    left: calc(50vw - 40px);
+  }
+  .main-logo img {
+    height: 60px;
+    width: auto;
+  }
+  .nav-logos {
+    width: 22vw;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-logos .user-icon {
+    width: 10vw;
+    height: auto;
+  }
+  .nav-logos .user-icon .user-icon-svg {
+    fill: black;
+    width: 40px;
+  }
+  .nav-logos .cart-icon {
+    width: 10vw;
+    height: auto;
+  }
+  .nav-logos .cart-icon .cart-icon-svg {
+    fill: black;
+    width: 40px;
+  }
+  .input-area {
+    display: none;
+  }
+  .booklist {
+    width: 90vw;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+    padding-top: 20px;
+  }
+  .booklist .booklist-header {
+    font-size: 30px;
+    padding: 20px;
+    font-weight: bold;
+  }
+  .booklist .book-wrapper {
+    width: 150px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .booklist .book {
+    width: 150px;
+    height: auto;
+    padding-right: 5px;
+  }
+  .booklist .book img {
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+  }
+  footer {
+    width: 100vw;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  footer .footer-first {
+    width: 95vw;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 5px solid black;
+    margin-top: 15px;
+  }
+  footer .footer-first .footer-text {
+    text-align: center;
+    width: 80vw;
+    font-size: 20px;
+    font-weight: bolder;
+    padding-bottom: 10px;
+  }
+  footer .footer-first .store-icons {
+    width: 50vw;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer .footer-first .store-icons img {
+    object-fit: cover;
+    height: auto;
+    width: 100px;
+    padding: 10px;
+  }
+  footer .footer-headers {
+    width: 90vw;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  footer .social-media {
+    width: 30vw;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer .social-media .follow {
+    text-align: center;
+    width: 80vw;
+    font-size: 20px;
+    font-weight: bolder;
+    padding-bottom: 10px;
+  }
+  footer .social-media .social-media-icons {
+    width: 40vw;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer .social-media .social-media-icons svg {
+    fill: black;
+    width: 30px;
+    height: auto;
+  }
+  footer .end-of-footer {
+    width: 90vw;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  footer .end-of-footer .payments,
+  footer .end-of-footer .last-text {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  footer .end-of-footer img {
+    height: auto;
+    width: 100px;
+  }
 }
 
 /*# sourceMappingURL=homepage.css.map */
