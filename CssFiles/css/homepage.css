@@ -1,4 +1,9 @@
 @media (max-width: 1023px) {
+  .navbar-1024,
+  .input-area-1024,
+  .nav-logos-1024 {
+    display: none;
+  }
   .nav {
     width: 100vw;
     height: 30px;
