@@ -14,8 +14,8 @@
 .main-logo {
   width: auto;
   height: 60px;
-  position: relative;
-  left: 27px;
+  position: absolute;
+  left: calc(50vw - 40px);
 }
 .main-logo img {
   height: 60px;
@@ -105,7 +105,7 @@
 
 footer {
   width: 100vw;
-  height: 325px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -150,6 +150,51 @@ footer .footer-headers {
   align-items: center;
   font-size: 18px;
   font-weight: bold;
+}
+footer .social-media {
+  width: 30vw;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .social-media .follow {
+  text-align: center;
+  width: 80vw;
+  font-size: 20px;
+  font-weight: bolder;
+  padding-bottom: 10px;
+}
+footer .social-media .social-media-icons {
+  width: 40vw;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .social-media .social-media-icons svg {
+  fill: black;
+  width: 30px;
+  height: auto;
+}
+footer .end-of-footer {
+  width: 90vw;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .end-of-footer .payments,
+footer .end-of-footer .last-text {
+  font-size: 18px;
+  font-weight: bold;
+}
+footer .end-of-footer img {
+  height: auto;
+  width: 100px;
 }
 
 /*# sourceMappingURL=homepage.css.map */

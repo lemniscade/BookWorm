@@ -12,8 +12,8 @@
 .main-logo {
   width: auto;
   height: 60px;
-  position: relative;
-  left: 27px;
+  position: absolute;
+  left: calc(50vw - 40px);
   img {
     height: 60px;
     width: auto;
@@ -100,7 +100,7 @@
 }
 footer {
   width: 100vw;
-  height: 325px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -144,5 +144,50 @@ footer {
     align-items: center;
     font-size: 18px;
     font-weight: bold;
+  }
+  .social-media {
+    width: 30vw;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    .follow {
+      text-align: center;
+      width: 80vw;
+      font-size: 20px;
+      font-weight: bolder;
+      padding-bottom: 10px;
+    }
+    .social-media-icons {
+      width: 40vw;
+      height: 40px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      svg {
+        fill: black;
+        width: 30px;
+        height: auto;
+      }
+    }
+  }
+  .end-of-footer {
+    width: 90vw;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    .payments,
+    .last-text {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    img {
+      height: auto;
+      width: 100px;
+    }
   }
 }
